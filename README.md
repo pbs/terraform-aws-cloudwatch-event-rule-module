@@ -6,7 +6,7 @@
 
 ```hcl
 module "cloudwatch-event-rule" {
-    source = "github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=0.0.1"
+    source = "github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=0.0.2"
 }
 ```
 
@@ -22,7 +22,7 @@ Integrate this module like so:
 
 ```hcl
 module "cloudwatch-event-rule" {
-  source = "github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=0.0.1"
+  source = "github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=0.0.2"
 
   event_pattern = <<PATTERN
 {
@@ -57,7 +57,7 @@ PATTERN
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.0.1`
+`0.0.2`
 
 Note, however that subtrees can be altered as desired within repositories.
 
