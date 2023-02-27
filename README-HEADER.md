@@ -1,13 +1,13 @@
-# PBS TF cloudwatch event rule module
+# PBS TF CloudWatch Event Rule Module
 
 ## Installation
 
 ### Using the Repo Source
 
+Use this URL for the source of the module. See the usage examples below for more details.
+
 ```hcl
-module "cloudwatch-event-rule" {
-    source = "github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=x.y.z"
-}
+github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -21,7 +21,7 @@ This module provisions a CloudWatch Event Rule. Use this to automate activity in
 Integrate this module like so:
 
 ```hcl
-module "cloudwatch-event-rule" {
+module "rule" {
   source = "github.com/pbs/terraform-aws-cloudwatch-event-rule-module?ref=x.y.z"
 
   event_pattern = <<PATTERN
